@@ -1,0 +1,12 @@
+This Arduino project is a remake of the classic snake game on a 5x8 LED matrix with two buttons.
+The digital ouputs D1 through D13 control the matrix - the display - while a high level on the
+A0 or A1 inputs turn the snake right or left accordingly. These buttons need a pulldown resistor
+each.
+The project was originally made in 2017, and I am planning to remake it using different hardware
+as an excuse to rewrite the messy code.
+I didn't give any values in the schematics, so just choose resistor values for the matrix to fit
+the rating of your transistors and LEDs.
+
+Only one LED is turned on at a time, so when the snake's body starts to fill in the matrix, there
+is a slight stroboscopic effect, and the LEDs get slightly dimmer. After testing on friends, this
+"problem" became a feature, because as it turns out, it only makes the game more enjoyable.
